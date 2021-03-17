@@ -33,6 +33,37 @@
                     </tbody>
                 </table>
             </form>
+
+            <form action="/" method="POST">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>User</th>
+                            <th>Edit/Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%- include('include/_rootform') %>
+                    </tbody>
+                </table>
+            </form>
+
+            <form action="/" method="POST">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Subject</th>
+                        <th>Edit/Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <%- include('include/_subjectform') %>
+                </tbody>
+            </table>
+            </form>
+
         </div>
     </main>
 <!-- /Main Site -->
