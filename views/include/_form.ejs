@@ -1,0 +1,50 @@
+ <!-- form handling -->
+ <form action="/api/users" method="POST" id="add_user">
+    <div class="new_user">
+        <div class="form-group">
+            <label for="name" class="text-light">Name</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="name" value="" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="subject" class="text-light">Subject</label>
+            <input type="text" name="subject" value="" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="property" class="text-light">Property</label>
+            <input type="text" name="property" value="" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="value" class="text-light">Concept/Value</label>
+            <input type="text" name="value" value="" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="gender" class="text-light">Voting</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-2" name="gender" value="Positive" >
+                <label for="radio-2" class="radio-label">Positive</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-3" name="gender" value="Negative" >
+                <label for="radio-3" class="radio-label">Negative</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="gender" class="text-light">Priority</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-4" name="status" value="High" >
+                <label for="radio-4" class="radio-label">High Priority</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-5" name="status" value="Low" >
+                <label for="radio-5" class="radio-label">Low Priority</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Create New Entry.</button>
+        </div>
+
+    </div>
+</form>
